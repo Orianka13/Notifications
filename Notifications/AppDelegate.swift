@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        UIApplication.shared.applicationIconBadgeNumber = 0 //при каждом запуске приложения это свойство будет обнуляться
     }
     
     func requestAuthorization(){
@@ -38,6 +38,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func getNotificationSettings() { //этот метод возвращает параметр который определил пользователь
         notificationCenter.getNotificationSettings { settings in //settings можно использовать для проверки состояния авторизации или отдельных параметров уведомлений
             print("Notification settings: \(settings)")
+        }
+    }
+    
+    func scheduleNotification(notificationType: String){ //расписание уведомлений
+        let content = UNMutableNotificationContent()
+        
+        content.title = notificationType
+        content.body = "This is example how to create" + notificationType
+        content.sound = UNNotificationSound.default
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        //имея контент и риггер создаем запрос на уведомления. Для каждого запроса требуется свой идентификатор.
+        
+        let identifier = "Local notification"
+        
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        
+        //вызываем запрос:
+        notificationCenter.add(request) { error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+            }
         }
     }
 
