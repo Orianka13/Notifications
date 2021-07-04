@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59D684B1269232C1004EFB9C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D684B0269232C1004EFB9C /* Notifications.swift */; };
+		59D684B32692367F004EFB9C /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D684B22692367F004EFB9C /* favicon.png */; };
 		A8217DE020DBD56300895832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8217DDF20DBD56300895832 /* AppDelegate.swift */; };
 		A8217DE520DBD56300895832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE320DBD56300895832 /* Main.storyboard */; };
 		A8217DE720DBD56400895832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8217DE620DBD56400895832 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		59D684B0269232C1004EFB9C /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		59D684B22692367F004EFB9C /* favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favicon.png; sourceTree = "<group>"; };
 		A8217DDC20DBD56300895832 /* Notifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8217DDF20DBD56300895832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8217DE420DBD56300895832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A8217DDF20DBD56300895832 /* AppDelegate.swift */,
 				59D684B0269232C1004EFB9C /* Notifications.swift */,
 				A8217DF320DCAF4E00895832 /* TableViewController.swift */,
+				59D684B22692367F004EFB9C /* favicon.png */,
 				A8217DE320DBD56300895832 /* Main.storyboard */,
 				A8217DE620DBD56400895832 /* Assets.xcassets */,
 				A8217DE820DBD56400895832 /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D684B32692367F004EFB9C /* favicon.png in Resources */,
 				A8217DEA20DBD56400895832 /* LaunchScreen.storyboard in Resources */,
 				A8217DE720DBD56400895832 /* Assets.xcassets in Resources */,
 				A8217DE520DBD56300895832 /* Main.storyboard in Resources */,
